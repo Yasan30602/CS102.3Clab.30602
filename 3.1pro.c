@@ -1,13 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
-{
-    int x;
+ {
+    int num1,num2;
 
-    x += 1;
-    x++;
-    ++x;
-    x = x + 1;
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
 
-    return(0);
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
 
+    if (num1 > num2) {
+        printf("The highest number is: %d\n", num1);
+    } else if (num2 > num1) {
+        printf("The highest number is: %d\n", num2);
+    } else {
+        printf("Both numbers are equal.\n");
+    }
+
+    return 0;
 }
+
